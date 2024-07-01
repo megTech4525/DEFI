@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../image/background.png);
+  background-position: center;
+
+  justify-content: center;
+}
+.rocket {
+  position: absolute;
+  bottom: 0px;
+  right: 200px;
+  animation: rocket 3s linear infinite;
+  transition: rocket 3s;
+}
+@keyframes rocket {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+    position: absolute;
+    bottom: 400px;
+  }
+}
+/* .rocket img{
+  
+} */
+.container {
+  margin: 20px;
+  position: relative;
+  top: 30px;
+}
+.logo {
+  position: absolute;
+  top: -30px;
+}
+.claim {
+  position: absolute;
+  justify-content: flex-end;
+  right: 0px;
+  top: -33px;
+}
+.claim a {
+  color: white;
+}
+.claim button {
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 800;
+  border-radius: 10px;
+  border-color: orange;
+  color: white;
+  background-color: #000;
+}
+.claim button:active {
+  transform: translateY(5px);
+}
+.header {
+  position: relative;
+  top: 30px;
+}
+.header h1 {
+  font-size: 40px;
+  color: white;
+}
+.header h1 span {
+  color: orange;
+}
+.header p {
+  font-size: 28px;
+  color: rgb(43, 255, 0);
+}
+.header #displayDate {
+  color: color-mix(in hsl shorter hue, green 30%, orange 70%);
+}
+.header h3 {
+  color: rgb(0, 217, 255);
+}
+
+.learn {
+  margin: 22px;
+  position: relative;
+  top: 40px;
+}
+.learn button {
+  border: 1px inset;
+  border-radius: 20px;
+  padding: 8px;
+  background-color: transparent;
+  font-weight: 800;
+  cursor: pointer;
+}
+.learn span {
+  margin: 2px;
+}
+.counter {
+  display: flex;
+  font-size: 40px;
+  position: relative;
+  top: 20px;
+}
+
+.counter .div1,
+.div2,
+.div3,
+.div4 {
+  margin: 10px;
+}
+.days span {
+  display: block;
+  font-size: 30px;
+}
+.days {
+  border: 1px solid;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10%;
+  color: white;
+}
+
+.hours span {
+  display: block;
+  font-size: 30px;
+}
+.hours {
+  border: 1px solid;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10%;
+  color: white;
+}
+.minutes span {
+  display: block;
+  font-size: 30px;
+}
+.minutes {
+  border: 1px solid;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10%;
+
+  color: white;
+}
+.seconds span {
+  display: block;
+  font-size: 30px;
+}
+.seconds {
+  border: 1px solid;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10%;
+
+  color: white;
+}
+.counter .days,
+.hours,
+.minutes,
+.seconds {
+  margin: 10px;
+}
+
+@media screen and (max-width: 662px) {
+  .counter {
+    font-size: 33px;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .counter {
+    display: flex;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .counter {
+    font-size: 20px;
+  }
+  .counter .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 27px;
+  }
+
+  .counter .div1,
+  .div2,
+  .div3,
+  .div4 {
+    margin: 0px;
+  }
+  .days span {
+    font-size: 17px;
+  }
+  .hours span {
+    font-size: 17px;
+  }
+  .minutes span {
+    font-size: 17px;
+  }
+  .seconds span {
+    font-size: 17px;
+  }
+  .counter {
+    margin: 0px;
+  }
+  .rocket {
+    position: absolute;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  .days span {
+    display: none;
+  }
+  .hours span {
+    display: none;
+  }
+  .minutes span {
+    display: none;
+  }
+  .seconds span {
+    display: none;
+  }
+}
+@media screen and (max-width: 377px) {
+  .claim button {
+    width: 70px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 334px) {
+  .counter .days,
+  .hours,
+  .minutes,
+  .seconds {
+    border: none;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 309px) {
+  .header h1 {
+    font-size: 30px;
+  }
+  .rocket {
+    position: absolute;
+    right: 50px;
+  }
+}
+@media screen and (max-width: 284px) {
+  .claim {
+    position: absolute;
+    top: 660px;
+  }
+  .claim button {
+    width: 200px;
+    position: relative;
+    bottom: 20px;
+    padding: 10px;
+  }
+}
+
+/* TAP SECTION */

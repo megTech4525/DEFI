@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tap</title>
+    <link rel="stylesheet" href="../css/tap.css" type="text/css" />
+  </head>
+  <body>
+    <div class="balance">
+      <h2 id="balance">Balance:$0.00</h2>
+    </div>
+    <div class="main_container">
+      <div class="figures">
+        <span id="figures"
+          ><img src="../image/coin (1).png" height="70px" width="63px" /><span id="tap-count"
+            >00.00</span
+          ></span
+        >
+      </div>
+      <div class="tap-img">
+        <img id="tapp" src="../image/Robot.png" height="300px" width="390px" />
+      </div>
+      <div class="button-claim">
+        <button id="withdrawal">Claim USDT</button>
+      </div>
+    </div>
+
+    <!--     
+wallet address forum -->
+    <div class="form">
+      <span id="close">x</span>
+      <p>
+        You are about to withdraw your Dita coin usdt Paste your USDT wallet address. Your mined
+        balance is <span id="cliamedBalance"></span>
+      </p>
+      <label for="address">Wallet Address</label><br />
+      <input type="text" placeholder="paste" />
+    </div>
+    <script src="../script/tap.js"></script>
+  </body>
+</html>
