@@ -5,6 +5,8 @@ let bal = document.getElementById("balance");
 let addinput = document.querySelector(".form");
 let inputwalletclose = document.getElementById("close");
 let cliamedBalance = document.getElementById("cliamedBalance");
+let submitBtn = document.getElementById("submitAddress");
+let addressinput = document.getElementById("wallet");
 let ballanceText = "Ballance";
 let i;
 let count = 0;
@@ -31,4 +33,14 @@ wid.addEventListener("click", () => {
 
 inputwalletclose.addEventListener("click", () => {
   addinput.style.display = "none";
+});
+submitBtn.addEventListener("click", () => {
+  if (addressinput.value == "") {
+    alert("INPUT WALLET ADDRESS");
+  } else if (addressinput.value.length < 10) {
+    alert("wALLET ADDRESS IS INCORRECT");
+  } else {
+    addinput.style.display = "none";
+    alert("WALLET ADDRESS SUBMITTED SUCCESSFULLY");
+  }
 });

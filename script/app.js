@@ -24,4 +24,3 @@ function myfunction() {
 }
 
 setInterval(myfunction, 1000);
-
