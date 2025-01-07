@@ -1,4 +1,4 @@
-let launchDate = new Date("Jul 26, 2024 00:00:00").getTime();
+let launchDate = new Date("Jul 26, 2025 00:00:00").getTime();
 
 let dDay = document.querySelector(".div1");
 let hrs = document.querySelector(".div2");
@@ -24,3 +24,4 @@ function myfunction() {
 }
 
 setInterval(myfunction, 1000);
+
